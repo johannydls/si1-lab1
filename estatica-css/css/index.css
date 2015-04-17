@@ -1,0 +1,44 @@
+#header {
+    background-color:#609bb6;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color: rgba(51, 166, 255, 0.13);
+    height:466px;
+    width:310px;
+    float:left;
+    padding:5px;
+    color: #157aac;
+    text-indent:5px;
+}
+#section1 {
+    width:580px;
+    float:right;
+    padding:20px;
+    color: #157aac;
+}
+
+#footer {
+    background-color: #609bb6;
+    color: #fefffd;
+    clear:both;
+    text-align:center;
+    padding:5px;
+}
+
+#boasvindas {
+    font-size: 15px;
+    color: #fff;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width:940px;
+    font-family: cursive;
+    color: #157aac;
+
+}
