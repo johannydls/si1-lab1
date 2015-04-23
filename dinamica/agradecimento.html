@@ -13,6 +13,7 @@
 
         <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!--<link href="css/bootstrap-redu.css" rel="stylesheet"> -->
 
         <!-- Custom CSS -->
         <link href="css/freelancer.css" rel="stylesheet">
@@ -65,7 +66,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <!-- <img class="img-responsive" src="img/profile.png" alt=""> -->
                     <div class="intro-text">
                         <span class="name">Cadastrado!</span>
                         <hr class="star-light">
@@ -87,13 +87,14 @@
                     <hr class="star-primary">
                 </div>
             </div>
+            <br>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <form name="aprender" id="contactForm">
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Quero aprender</label>
-                                <input type="text" class="form-control" placeholder="O que você gostaria de aprender?" id="tema-aprender" required data-validation-required-message="Por favor, digite um tema." onkeypress="if ((window.event ? event.keyCode : event.which) == 13) {addItem();}">
+                                <br>
+                                <input type="text" class="form-control" placeholder="Digite um tema ou assunto que você gostaria de aprender ou que já aprendeu." id="tema-aprender" required data-validation-required-message="Por favor, digite um tema." onkeypress="if ((window.event ? event.keyCode : event.which) == 13) {addItem();}">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -105,41 +106,45 @@
             <br><br>
             <!-- TABELA DE ITENS A APRENDER -->
 
-            <div id="tabela1">
-                <table class="table table-hover">
-                    <caption>O que você gostaria de aprender?</caption>
-                    <thead>
-                    <!-- <th width=200 align='center'>Tema</th>
+            <div class="row">
+                <div id="AllTables" class=" col-lg-offset-3">
+                    <div id="tabela1">
+                        <p>
+                            <table class="table table-responsive table-hover">
+                                <caption><strong>Temas para aprender</strong></caption>
+                                <thead>
+                                <!--<th width=220 align='center'>Tema</th> -->
 
-                    <th width=125 align='center'>Remover</th>
-                    <th width=125 align='center'>Já aprendi</th>
-                    -->
-                    </thead>
+                                </thead>
 
-                    <tbody id="linhas1">
-                    <tr>
+                                <tbody id="linhas1">
+                                <tr>
 
-                    </tr>
-                    </tbody>
-                </table>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </p>
+                    </div>
 
-            </div>
+                    <!-- TABELA DE ITENS JÁ APRENDIDO -->
+                    <br>
+                    <div id="tabela2">
+                        <p>
+                            <table class="table table-responsive table-hover">
+                                <caption><strong>Temas já aprendidos</strong></caption>
+                                <thead>
 
-            <!-- TABELA DE ITENS JÁ APRENDIDO -->
+                                </thead>
 
-            <div id="tabela2">
-                <table class="table table-hover">
-                    <caption>O que você já aprendeu?</caption>
-                    <thead>
-                        <!-- <th width=200>Tema</th> -->
-                    </thead>
+                                <tbody id="linhas2">
+                                <tr>
 
-                    <tbody id="linhas2">
-                    <tr>
-
-                    </tr>
-                    </tbody>
-                </table>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

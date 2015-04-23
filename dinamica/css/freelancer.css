@@ -459,28 +459,18 @@ footer .footer-below {
 }
 
 #tabela1{
-    max-width:450px;
-    width: 450px;
-    padding: 20px;
-    align: center;
-    border: groove;
-    float: left;
+    max-width:440px;
+    width: 440px;
 
 }
 
 #tabela2{
-    max-width: 450px;
-    width: 450px;
-    padding: 20px;
-    align: center;
-    border: groove;
-    float: right;
+    max-width: 440px;
+    width: 440px;
 }
 
-#entrada{
-    padding: 20px;
-}
-
-th{
+caption{
     text-align: center;
 }
+
+
