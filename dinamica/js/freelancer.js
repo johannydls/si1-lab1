@@ -35,3 +35,13 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+function submitRegister() {
+    var contentName = $('input#name').val();
+    var contentMatricula = $('input#matricula').val();
+    var contentEmail = $('input#email').val();
+
+    if (contentName.length == 0 || contentMatricula.length == 0 || contentEmail.length == 0 ) {
+        alert('Preencha todos os campos!');
+    }
+}

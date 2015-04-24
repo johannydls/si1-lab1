@@ -1,13 +1,49 @@
 
-$("#videos-sugeridos").hide();
-$("#menu-videos-sugeridos").hide();
+$(document).ready(function() {
+
+    $("#videos-sugeridos").hide();
+    $("#menu-videos-sugeridos").hide();
+
+    $(document).on("click", "#botao-aprendi", function(){
+        $(this).remove();
+    });
+
+    (function($) {
+
+        RemoveTableRow = function(handler) {
+            var tr = $(handler).closest('tr');
+
+            tr.fadeOut(400, function() {
+                tr.remove();
+            });
+
+            return false
+        };
+
+        MoveTableRow = function(handler) {
+            var tr = $(handler).closest('tr');
+
+            $("#linhas2").append(tr);
+
+            return false;
+        }
+    })(jQuery);
+})
+
+
 
 function addItem() {
 
     var valor = $('#tema-aprender').val();
 
     if (valor != "") {
-        $("#linhas1").append('<tr> <td width=200>' + valor + '</td> <td width=125><button class="btn btn-small btn-danger" onclick="RemoveTableRow(this)" type="button">Remover</button></td> <td width=125><button class="btn btn-small btn-success" onclick="MoveTableRow(this)" type="button">Aprendi</button></td>  </tr>');
+        $("#linhas1").append(
+            '<tr>' +
+                '<td width=200 id="valor-assunto">' + valor + '</td>' +
+                '<td width=125 id="botao-remove"><button class="btn btn-danger" onclick="RemoveTableRow(this)" type="button">Remover</button></td>' +
+                '<td width=125 id="botao-aprendi"><button class="btn btn-success" onclick="MoveTableRow(this)" type="button">Aprendi</button></td>' +
+            '</tr>'
+        );
     }
 
     //Limpa o campo de pesquisa
@@ -28,29 +64,8 @@ function addItem() {
         $("#videos-sugeridos").show();
         $("#menu-videos-sugeridos").show();
     }
-
-
 }
 
 
-(function($) {
 
-    RemoveTableRow = function(handler) {
-        var tr = $(handler).closest('tr');
-
-        tr.fadeOut(400, function() {
-            tr.remove();
-        });
-
-        return false
-    };
-
-    MoveTableRow = function(handler) {
-        var tr = $(handler).closest('tr');
-
-        $("#linhas2").append(tr);
-
-        return false;
-    }
-})(jQuery);
 
