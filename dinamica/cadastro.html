@@ -72,11 +72,11 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
 
-                        <form name="sentMessage" id="contactForm" novalidate>
+                        <form name="sentMessage" id="contactForm" method="post" action="agradecimento.html">
                             <div class="row control-group">
                                 <div class="form-group col-xs-12 floating-label-form-group controls">
                                     <label>Nome</label>
-                                    <input type="text" class="form-control" placeholder="Digite seu nome completo" name="name">
+                                    <input type="text" class="form-control" placeholder="Digite seu nome completo" name="name" required="required">
 
                                 </div>
                             </div>
@@ -84,24 +84,23 @@
                             <div class="row control-group">
                                 <div class="form-group col-xs-12 floating-label-form-group controls">
                                     <label>Matrícula</label>
-                                    <input type="text" class="form-control" placeholder="Digite sua matrícula" name="matricula">
+                                    <input type="text" class="form-control" placeholder="Digite sua matrícula" name="matricula" required="required">
                                 </div>
                             </div>
 
                             <div class="row control-group">
                                 <div class="form-group col-xs-12 floating-label-form-group controls">
                                     <label>Email</label>
-                                    <input type="text" class="form-control" placeholder="Digite seu email" name="email">
+                                    <input type="text" class="form-control" placeholder="Digite seu email" name="email" required="required">
                                 </div>
                             </div>
-
 
                             <br><br>
 
                             <div class="col-lg-8 col-lg-offset-2 text-center">
-                                <a href="agradecimento.html" class="btn btn-lg btn-success" id="btnCadastrar">
-                                    <i class="fa fa-check"></i> Cadastrar
-                                </a>
+                                    <button class ="btn btn-lg btn-success" type="submit">
+                                        <i class="fa fa-check"></i> Cadastrar
+                                    </button>
                             </div>
                         </form>
                     </div>
