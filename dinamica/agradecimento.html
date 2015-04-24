@@ -41,7 +41,7 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right page-scroll">
+                <ul class="nav navbar-nav navbar-right page-scroll" id="itens-menu">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
@@ -52,6 +52,10 @@
 
                     <li class="page-scroll">
                         <a href="#interacao">O que você gostaria de aprender?</a>
+                    </li>
+
+                    <li class="page-scroll" id="menu-videos-sugeridos">
+                        <a href="#videos-sugeridos">Vídeos sugeridos</a>
                     </li>
                 </ul>
             </div>
@@ -95,7 +99,7 @@
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <br>
                                 <input type="text" class="form-control" placeholder="Digite um tema ou assunto que você gostaria de aprender ou que já aprendeu." id="tema-aprender" required data-validation-required-message="Por favor, digite um tema." onkeypress="if ((window.event ? event.keyCode : event.which) == 13) {addItem();}">
-                                <p class="help-block text-danger"></p>
+                                <p class="help-block"></p>
                             </div>
                         </div>
 
@@ -112,15 +116,13 @@
                         <p>
                             <table class="table table-responsive table-hover">
                                 <caption><strong>Temas para aprender</strong></caption>
-                                <thead>
-                                <!--<th width=220 align='center'>Tema</th> -->
 
-                                </thead>
+                                <thead></thead>
 
                                 <tbody id="linhas1">
-                                <tr>
 
-                                </tr>
+                                    <tr></tr>
+
                                 </tbody>
                             </table>
                         </p>
@@ -132,14 +134,11 @@
                         <p>
                             <table class="table table-responsive table-hover">
                                 <caption><strong>Temas já aprendidos</strong></caption>
-                                <thead>
 
-                                </thead>
+                                <thead></thead>
 
                                 <tbody id="linhas2">
-                                <tr>
-
-                                </tr>
+                                    <tr></tr>
                                 </tbody>
                             </table>
                         </div>
@@ -149,6 +148,28 @@
         </div>
     </section>
 
+
+    <!-- Videos Section -->
+    <section class="success" id="videos-sugeridos">
+        <div class="container" id="container-sugestivos" name="container-sugestivos">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Sujestão de vídeos</h2>
+                    <hr class="star-light">
+                    <br>
+                </div>
+
+                <div class="row col-lg-12" id="show-videos" name="show-videos">
+                    *videos*.
+                </div>
+
+            </div>
+            <div class="row">
+
+
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="text-center" id="footer">
@@ -211,6 +232,7 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/youtube-busca.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
