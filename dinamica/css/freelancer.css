@@ -459,14 +459,14 @@ footer .footer-below {
 }
 
 #tabela1{
-    max-width:440px;
-    width: 440px;
+    max-width:540px;
+    width: 540px;
 
 }
 
 #tabela2{
-    max-width: 440px;
-    width: 440px;
+    max-width: 540px;
+    width: 540px;
 }
 
 caption{
@@ -490,5 +490,8 @@ caption{
     height: 100%;
 }
 
-
+#valor-assunto{
+    font-size: 20px;
+    text-align: center;
+}
 

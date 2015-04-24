@@ -6,7 +6,11 @@
         $.ajax({type:"GET",url:pars.feedurl+"&max-results="+pars.count,dataType:"jsonp",success:function(yt_data){
 
             feeddiv.html("");
-            $.each(yt_data.data.items,function(i,entry){
+
+            //Resolvendo problema do primeiro video da busca ser o mesmo aviso do Youtube
+            var videos = yt_data.data.items.slice(1,4);
+
+            $.each(videos,function(i,entry){
                 var video_id=entry.id;
                 var video_frame="<iframe width='"+pars.width+"' height='"+pars.height+"' src='http://www.youtube.com/embed/"+video_id+"' frameborder='0' type='text/html'></iframe>";
                 pubdt=new Date(entry.updated);
